@@ -8,7 +8,13 @@ const pkg = require('./package.json');
 
 let libraryName = pkg.name;
 
-let plugins = [], outputFile;
+// fix for Webpack warning 'Critical dependency: the request of a dependency is an expression'
+// https://github.com/angular/angular/issues/20357
+let plugins = [
+  new webpack.ContextReplacementPlugin(/@angular\/core\/esm5/, path.join(__dirname, './client'))
+];
+
+let outputFile;
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }));
@@ -38,6 +44,18 @@ const config = {
         test: /(\.jsx|\.js)$/,
         loader: 'eslint-loader',
         exclude: /node_modules/
+      },
+      /* fix for KeyboardEvent is not defined https://github.com/valor-software/ngx-bootstrap/issues/964 */
+      {
+        test: /\.(ts|js)$/,
+        loader: 'regexp-replace-loader',
+        query: {
+          match: {
+            pattern: '\\[(Mouse|Keyboard)Event\\]',
+            flags: 'g'
+          },
+          replaceWith: '[]'
+        }
       }
     ]
   },
