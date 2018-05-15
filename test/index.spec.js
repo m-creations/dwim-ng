@@ -1,7 +1,7 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {Cat, Dog} from '../lib/webpack-library-starter.js';
+import {Cat, Dog} from '../lib/hu.dwim.primeng.js';
 
 chai.expect();
 
