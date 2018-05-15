@@ -1,3 +1,5 @@
 import Cat from './cat.js';
 import Dog from './dog.js';
-export { Dog, Cat };
+import * as primeng from 'primeng/primeng';
+
+export { Dog, Cat, primeng };
