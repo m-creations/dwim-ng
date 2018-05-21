@@ -1,5 +1,5 @@
 {
-  "name": "hu.dwim.primeng",
+  "name": "hdp_primeng",
   "version": "0.0.1",
   "description": "A library containing PrimeNG to be used in dwim.hu Common Lisp application server",
   "main": "lib/hu.dwim.primeng.js",

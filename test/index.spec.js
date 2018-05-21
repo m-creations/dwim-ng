@@ -1,7 +1,7 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {Cat, Dog} from '../lib/hu.dwim.primeng.js';
+import {Cat, Dog} from '../lib/hdp_primeng.js';
 
 chai.expect();
 
