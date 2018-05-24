@@ -1,8 +1,8 @@
 {
-  "name": "hdp_primeng",
+  "name": "dwim_ng",
   "version": "0.0.1",
-  "description": "A library containing PrimeNG to be used in dwim.hu Common Lisp application server",
-  "main": "lib/hu.dwim.primeng.js",
+  "main": "lib/dwim_ng.js",
+  "description": "A library containing Angular and PrimeNG to be used in dwim.hu Common Lisp application server",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
     "dev": "webpack --progress --colors --watch --env dev",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m-creations/hu.dwim.primeng.git"
+    "url": "https://github.com/m-creations/dwim-ng.git"
   },
   "keywords": [
     "dwim.hu",
@@ -25,9 +25,9 @@
   "author": "Kambiz Darabi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/m-creations/hu.dwim.primeng/issues"
+    "url": "https://github.com/m-creations/dwim-ng/issues"
   },
-  "homepage": "https://github.com/m-creations/hu.dwim.primeng",
+  "homepage": "https://github.com/m-creations/dwim-ng",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
