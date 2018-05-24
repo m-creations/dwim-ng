@@ -1,0 +1,18 @@
+* dwim-ng
+
+** Introduction
+
+The project dwim-ng is an extension to [[https://github.com/hu-dwim/hu.dwim.presentation][hu.dwim.presentation]] with the
+aim to modernise the web UI to use [[http://angular.io][Angular]].
+
+This is the JavaScript part of the library, the Common Lisp part can
+be found separately at [[https://github.com/m-creations/dwim-angular][dwim-angular]].
+
+* Acknowledgements
+
+Our work is based on and adds only little to what the following kind
+people have created. We therefore like to thank
+
+- [[https://github.com/krasimir][Krasimir Tsonev]] for his [[https://github.com/krasimir/webpack-library-starter][starter project]] which we used to build the
+  JS lib with the Bundler [[https://webpack.js.org/][Webpack]]
+
